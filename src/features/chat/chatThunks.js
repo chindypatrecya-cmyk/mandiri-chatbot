@@ -14,7 +14,7 @@ export const sendMessage = createAsyncThunk(
         })),
     };
 
-    const response = await fetch("/api/chat", {
+    const response = await fetch("https://chindy.pythonanywhere.com/api/chat", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
